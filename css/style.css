@@ -1,0 +1,296 @@
+body, ul, li {
+  margin: 0; padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* 폰트 - suit */
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* 폰트 - pretendard */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* 커스텀 */
+.sec {
+  height: 950px;
+  font-family: 'Pretendard';
+}
+
+.sec01 {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 0 200px;
+  position: relative;
+  overflow: hidden;
+  /* 이 섹션 안에서만 레이어 처리 */
+  isolation: isolate; 
+  display: flex;
+  flex-direction: column;
+}
+
+.sec01 > img {
+  position: absolute;
+  z-index: 0;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sec01 > header,
+.sec01 > .con {
+  position: relative;
+  z-index: 1;
+}
+
+.sec01 > header {
+  font-family: 'Suit';
+  font-weight: 500;
+  font-size: 18px;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec01 > header > .menu > ul {
+  display: flex;
+  gap: 70px;
+}
+
+.sec01 > .con  {
+  padding-bottom: 200px;
+  flex-grow: 1;
+  text-align: end;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.sec01 > .con > .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sec01 > .con p {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  letter-spacing: 0.08em;
+}
+
+.sec01 > .con h1 {
+  font-family: 'Suit';
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 0.04em;
+}
+
+.sec02 {
+  background-color: #FBF9F6;
+  margin-top: 3px;
+  padding: 140px 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec02 > h2 {
+  color: #6E432F;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  letter-spacing: 0.03em;
+}
+
+.sec02 .category {
+  padding-top: 40px;
+}
+
+.sec02 .category > ul {
+  display: flex;
+}
+
+.sec02 .category > ul > li > a {
+  color: #A49B94;
+  display: block;
+  padding: 16px 100px;
+  border-bottom: 1px solid #A49B94;
+  font-size: 24px;
+}
+
+.sec02 .category > ul > li > a.active {
+  font-weight: 600;
+  color: #D91E57;
+  border-bottom: 1.2px solid #D91E57;
+}
+
+.sec02 .pr_box {
+  display: flex;
+  padding: 120px 20px 0 20px;
+  text-align: center;
+  font-family: 'Suit';
+}
+
+.sec02 .pr_box > .menu > ul {
+  display: flex;
+  gap: 40px;
+}
+
+.sec02 .pr_box > .menu > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.sec02 > .pr_box .text {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.sec02 > .pr_box h4 {
+  color: #333;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.sec02 > .pr_box p {
+  color: #666;
+  font-weight: 300;
+  font-size: 16px;
+}
